@@ -139,7 +139,16 @@ export class AppComponent {
     };
     var pieChart = new Chart(ctx, {
       type: "doughnut",
-      data: chartData
+      data: chartData,
+      options: {
+        maintainAspectRatio: true,
+        title: {
+          display: false,
+        },
+        legend: {
+          display: false,
+        }
+      }
     });
   }
 }
